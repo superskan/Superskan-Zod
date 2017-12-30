@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<title>Fejlesztő | Zodura</title>
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0" charset="UTF-8">
+<meta name="description" content="Gépészet A-tól Zodura-ig,ahol a rendszerek elkészülnek.">
+<meta name="keywords" content="épületgépészet, hűtés, fűtés, cső, csővezeték, vízvezeték, radiátor, padlófűtés, csatorna, kazán, cirkó, turbós , hőcserélő, kondenzációs, légkondicionálás, légkondi, klíma, klimatizálás, szerelés, gázhálózat, készüékszerelés, légtechnika, rendszer, kiépítés, hőszivattyú, víz, csatorna, vízgépészeti, kivitelezés, tervezés, anyagbeszerzés, műszaki átadás, lakás, családi ház, nyaraló, teljeskörű kivitelezés, víz-víz, levegő-víz, telepítés, közületek, közületi, gyárak, bővítés, új csarnok, gyártóegység, gyártóegység bővítés, karbantartás, korszerűsítés, üzemeltetés, elektromos, erősáram, gyengeáram, áram, kertészet, kertészeti, kert, teljeskörű, szolgáltatás, zodura, zodura kft, budaörs, zodurakft@zodurakft.com, www.zodura.hu,">
+<link rel="canonical" href="http://www.zodura.hu/">
+
+<style>
+        @import url('https://fonts.googleapis.com/css?family=Work+Sans:300&subset=latin-ext');
+
+                html,
+                body {
+                    height: 100%;
+                    margin: 0;
+                    padding: 0;
+                    font-family: "Work sans", Arial;
+                    color: white;
+                }
+
+                ol {
+                    list-style-type: none;
+                    padding: 0;
+                }
+
+                ol li {
+                    display: inline;
+                }
+
+                .logocska {
+                    position: absolute;
+                    margin-top: 20px;
+                    margin-left: 20px;
+                    width: 50px;
+                    height: 50px;
+                }
+
+                a {
+                    color: white;
+                    text-decoration: none;
+                }
+
+                .gombdoboz a {
+                    margin: 10px;
+                    display: inline-block;
+                }
+
+                .cim {
+                    font-size: 50px;
+                    font-weight: 300;
+                }
+
+                .vkozepre {
+                    position: absolute;
+                    left: 50%;
+                    margin-right: -50%;
+                    transform: translate(-50%, 0);
+                }
+
+                .vfkozepre {
+                    position: absolute;
+                    top: 50%;
+                    margin-bottom: -50%;
+                    left: 50%;
+                    margin-right: -50%;
+                    transform: translate(-50%, -50%);
+                    text-align: center;
+                }
+
+                #headerbox {
+                    z-index: 1;
+                    text-align: center;
+                    position: absolute;
+                    left: 50%;
+                    margin-right: -50%;
+                    transform: translate(-50%, 0);
+                    font-family: Arial;
+                    text-transform: uppercase;
+                    font-size: 14px;
+                    margin-top: 1px;            
+                }
+
+                #headerbox a {
+                    margin: 0px 10px;
+                    text-decoration: none;
+                }
+
+                #headerbox a:hover {
+                    color: rgb(203, 203, 203);
+                    transition-duration: 0.5s;
+                }
+
+                .lablec {
+                    font-family: Arial;
+                    position: absolute;
+                    bottom: 0;
+                    font-size: 14px;
+                    margin-bottom: 5px;
+                    text-align: center;
+                }
+
+                .lablec a {
+                    margin: 0px 10px;
+                    text-decoration: none;
+                }
+
+                .lablec a:hover {
+                    color: rgb(203, 203, 203);
+                    transition-duration: 0.5s;
+                }
+
+                .gombdoboz {
+                    z-index: 0;
+                    margin-top: 30px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    display: table;
+                }
+
+                .gomb {
+                    padding: 12px;
+                    width: 165px;
+                    background: rgba(0, 0, 0, 0.5);
+                    font-family: Arial;
+                    font-size: 12px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    display: table-cell;
+                    vertical-align: middle;
+                    height: 18px;
+                    border: 1px solid transparent;
+
+                }
+
+                .gomb:hover {
+                    border: 1px solid white;
+                    transition-duration: 0.2s;
+                }
+                .akciogomb {
+                    padding: 12px;
+                    width: 165px;
+                    background: rgba(255, 0, 0, 0.6);
+                    font-family: Arial;
+                    font-size: 12px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    display: table-cell;
+                    vertical-align: middle;
+                    height: 18px;
+                    border: 1px solid transparent;
+
+                }
+
+                .akciogomb:hover {
+                    border: 1px solid white;
+                    transition-duration: 0.5s;
+                }
+
+                .hirlev {
+                    margin-top: 30px;
+                    text-decoration: none;
+                    font-family: Arial;
+                    display: inline-block;
+                }
+
+                .hirlev a:hover {
+                    color: rgb(203, 203, 203);
+                    transition-duration: 0.5s;
+                }
+
+                #conference {
+                    margin-top: 30px;
+                    text-decoration: none;
+                    font-family: Arial;
+                    display: inline-block;
+                }
+
+                #conference a:hover {
+                    color: rgb(203, 203, 203);
+                    transition-duration: 0.5s;
+                }
+
+                .fullscreen-bg {
+                    overflow: hidden;
+                    z-index: -100;
+                    background: url('hatter.jpeg');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                }
+
+                .fullscreen-bg__video {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    width: auto;
+                    height: auto;
+                    min-width: 100%;
+                    min-height: 100%;
+                    -webkit-transform: translate(-50%, -50%);
+                    -moz-transform: translate(-50%, -50%);
+                    -ms-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
+                    pointer-events: none;
+                }
+				
+				#year {
+					margin: 0 10px 0 0;
+				}
+
+                
+
+                @media (max-width: 850px) {
+           
+                    .fullscreen-bg__video {
+                        display: none;
+                    }
+                    .logocska {
+                        display: none;
+                    }
+                    .hideonmobile {
+                        display: none;
+                    }
+                    #headerbox { 
+                        font-size: 12px;
+                        width: 100%;
+                    }
+
+                    ol {
+                        padding: 0px;
+                    }
+
+                    #headerbox a {
+                        text-align: center;
+                    }
+                
+                    .cim {
+                        font-size: 35px;
+                    }
+					
+					.lablec {
+						margin-left: 5px;
+					}
+                    #conference {
+                    margin-top: 12px;
+                    }
+
+                    .gombdoboz {
+                    margin-top: 8px;
+                    }
+                    .gombdoboz > p {
+                    padding-left: 40px;
+                    padding-right: 40px;
+                    text-align: left;
+                    line-height: 18px;
+                    }
+                    .gombdoboz br {display: none;}
+                }
+				
+				@media (max-width: 340px) {
+					.lablec {
+						font-size: 12px;
+					}
+				}
+
+                @media (max-height: 450px) {
+                    #headerbox {
+                        display: none;
+                    }
+                    .lablec {
+                        display: none;
+                    }
+                    .hirlev {
+                        margin-top: 20px;
+                    }
+                }
+    </style>
+</head>
+<body class="fullscreen-bg">
+
+<video loop muted autoplay poster="hatter.jpeg" class="fullscreen-bg__video">
+<source src="fejlesztohatter.mp4">
+</video>
+
+<div id="headerbox">
+<ol>
+<li><a href="index.html">Főoldal</a></li><li><a href="rolunk.html">Rólunk</a></li><li><a href="fejleszto.html">Web</a></li>
+</ol>
+</div>
+
+
+<div class="vfkozepre">
+<div class="cim">A weboldal készítője<br><br>Superskan</div>
+<div class="gombdoboz">
+</div>
+<br />
+<div class="hirlev"><a href=""></a></div>
+</div>
+
+
+<div class="lablec vkozepre">
+© Superskan-<span id="year"></span><span></div>
+<script>
+        var d = new Date();
+        var n = d.getFullYear();
+        document.getElementById("year").innerHTML = n;
+    </script>
+
+</body>
+</html>
